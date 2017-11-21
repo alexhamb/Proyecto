@@ -1,0 +1,61 @@
+
+<resources>
+
+<string name="app_name">HMANAGER</string>
+<string name="action_settings">Settings</string>
+<string name="id_b">INGRESE ID:</string>
+<string name="id_pac">ID PACIENTE:</string>
+<string name="id_doc">ID DOCTOR:</string>
+<string name="statusup">HISTORIA:</string>
+<string name="guardar">GUARDAR</string>
+<string name="agregarp">AGREGAR PACIENTE</string>
+<string name="limpiar">LIMPIAR</string>
+<string name="cedula">CÉDULA</string>
+<string name="nombre">NOMBRE</string>
+<string name="apellido">APELLIDO</string>
+<string name="sexo">SEXO:</string>
+<string name="edad">EDAD</string>
+<string name="agregard">AGREGAR DOCTOR</string>
+<string name="roll">ESPECIALIDAD</string>
+<string name="email">EMAIL</string>
+<string name="agregarmed">AGREGAR MEDICAMENTO</string>
+<string name="descripcion">DESCRIPCIÓN</string>
+<string name="tipo">CATEGORIA</string>
+<string name="cantidad">CANTIDAD</string>
+<string name="precio">PRECIO</string>
+<string name="mdoctor">MODIFICAR DOCTOR</string>
+<string name="modificarm">MODIFICAR MEDICAMENTO</string>
+<string name="modificarp">MODIFICAR PACIENTE</string>
+<string name="registrar">REGISTRAR</string>
+<string name="modificar">REGISTRAR</string>
+<string name="eliminar">REGISTRAR</string>
+<string name="actualizare">ACTUALIZAR</string>
+<string name="vp">VER PACIENTES</string>
+<string name="vd">VER DOCTORES</string>
+<string name="mensaje_escoja_imagen">SELECCIONE LA IMAGEN</string>
+<string name="vm">VER MEDICAMENTOS</string>
+<string name="rb">REALIZAR BUSQUEDAD</string>
+<string name="ihp">INGRESAR HISTORIA</string>
+<string name="pass">PASS</string>
+<string name="in">INICIAR</string>
+<string name="r">REGISTRARSE</string>
+<string name="w">www.cuc.edu.co</string>
+<string name="hms">VALORACION MEDICA</string>
+<string name="iddocp">ID DOCTOR</string>
+<string name="opc_positivo">SI</string>
+<string name="opc_negativo">NO</string>
+<string name="msg_ventana_eliminar">¿CONFIRMAR ELIMINACION?</string>
+<string name="msgs_paciente_modificada_exitosamente">MODIFICACION EXITOSA</string>
+<string name="msg_error_cedula_existente">ESTA CEDULA YA EXISTE</string>
+<string name="msg_error_vacio">NO DEJE CAMPOS VACIOS</string>
+<string name="msg_persona_guardada">PACIENTE GUARDADO CORRECTAMENTE</string>
+
+    <string name="opcDoctor">Ingresar como DOCTOR</string>
+    <string name="opcPaciente">Ingresar como Paciente</string>
+
+<array name="Menu_P">
+    <item>@string/opcDoctor</item>
+    <item>@string/opcPaciente</item>
+</array>
+
+</resources>

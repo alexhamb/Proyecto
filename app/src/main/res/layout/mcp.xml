@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp"
+    tools:context="com.example.asus.myapplication.Modificar_paciente">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/modificarp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/mfotoInicial2"
+        android:layout_width="204dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription=""
+        android:onClick="seleccionar_foto"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:id="@+id/mtxtCedulap"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/cedula"
+            android:inputType="number"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:id="@+id/mtxtNombrep"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/nombre"
+            android:inputType="textLongMessage"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <EditText
+            android:id="@+id/mtxtEdadp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="@string/edad"
+            android:inputType="textLongMessage"
+            android:textStyle="bold" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="184dp">
+
+        <EditText
+            android:id="@+id/mtxtVmp"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:hint="@string/hms"
+            android:inputType="number"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="agregar"
+            android:text="@string/guardar"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="limpiar"
+            android:text="@string/limpiar"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

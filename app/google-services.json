@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "392749323164",
+    "firebase_url": "https://martes21-master.firebaseio.com",
+    "project_id": "martes21-master",
+    "storage_bucket": "martes21-master.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392749323164:android:25894f8e03f6075c",
+        "android_client_info": {
+          "package_name": "com.example.asus.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392749323164-vs54b0fqe8n151b2ercgjmlmanv5gvpp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asus.myapplication",
+            "certificate_hash": "2fd5ee88fe8825fb9feec3117c6b6297c77397b8"
+          }
+        },
+        {
+          "client_id": "392749323164-v5ksigkr5lq1uc6tajf115lkob70vuqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3i_rG4_IMkhPcq0f8UUuh0kwhBKX-ayA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392749323164-v5ksigkr5lq1uc6tajf115lkob70vuqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

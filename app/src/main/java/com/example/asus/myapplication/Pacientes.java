@@ -84,9 +84,8 @@ public class Pacientes {
         this.valoracion_medica = valoracion_medica;
     }
 
-    public void GuardarP(){
-        Datos.GuardarPacientes(this);
-    }
+    public void GuardarP(){Datos.GuardarPacientes(this);}
+
     public void ModificarP(){Datos.Actualizar(this);}
 
     public void EliminarP(){Datos.Eliminar(this);}

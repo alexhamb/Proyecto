@@ -11,8 +11,7 @@ import java.util.ArrayList;
 
 public class Datos {
 
-    private static DatabaseReference databaseReference = FirebaseDatabase.
-            getInstance().getReference();
+    private static DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
     private static String bd ="com.example.root.mproject.Pacientes";
     private static ArrayList<Pacientes> pacientes = new ArrayList<>();
     private static String bd2 ="com.example.root.mproject.Medicamentos";
@@ -37,6 +36,7 @@ public class Datos {
     public static String getId(){
         return databaseReference.push().getKey();
     }
+
 
     public static void Actualizar(Pacientes p ){
         databaseReference.child(bd).child(p.getId()).setValue(p);

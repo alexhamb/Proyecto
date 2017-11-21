@@ -18,12 +18,12 @@ public class SplashScreen extends Activity {
         Thread timerTread = new Thread(){
             public void run(){
                 try{
-                    sleep(3000);
+                    sleep(2000);
                 }
                 catch (InterruptedException e){
                     e.printStackTrace();
                 } finally {
-                    Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                    Intent intent = new Intent(SplashScreen.this, Login.class);
                     startActivity(intent);
                 }
             }

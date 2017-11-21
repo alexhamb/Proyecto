@@ -29,17 +29,16 @@ public class AdaptadorP extends RecyclerView.Adapter<AdaptadorP.PacientesViewHol
     private Context contexto;
 
 
-    public AdaptadorP(Context contexto, ArrayList<Pacientes> pacientes,
-                            OnPacientesClickListener clickListener){
-        this.pacientes=pacientes;
-        this.res=contexto.getResources();
-        this.contexto=contexto;
-        this.clickListener=clickListener;
+    public AdaptadorP(Context contexto, ArrayList<Pacientes> pacientes, OnPacientesClickListener clickListener) {
+        this.pacientes = pacientes;
+        this.res = contexto.getResources();
+        this.contexto = contexto;
+        this.clickListener = clickListener;
     }
 
     @Override
     public PacientesViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_pac,parent,false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_pac, parent, false);
         return new PacientesViewHolder(v);
     }
 
@@ -48,24 +47,23 @@ public class AdaptadorP extends RecyclerView.Adapter<AdaptadorP.PacientesViewHol
         final Pacientes p = pacientes.get(position);
 
         StorageReference storageReference = FirebaseStorage.getInstance().getReference();
-        storageReference.child(p.getFoto()).getDownloadUrl()
-                .addOnSuccessListener(new OnSuccessListener<Uri>() {
-                    @Override
-                    public void onSuccess(Uri uri) {
-                        Picasso.with(contexto).load(uri).into(holder.foto);
-                    }
-                });
+        storageReference.child(p.getFoto()).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Picasso.with(contexto).load(uri).into(holder.foto);
+            }
+        });
+
         holder.cedula.setText(p.getCedula());
         holder.nombre.setText(p.getNombre());
         holder.edad.setText(p.getEdad());
-        holder.valoracion_medica.setText(p.getValoracion_medica());
-
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 clickListener.onPacientesClick(p);
             }
         });
+
 
     }
     @Override

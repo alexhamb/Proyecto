@@ -33,6 +33,9 @@ public class Modificar_paciente extends AppCompatActivity {
     private StorageReference storageReference;
     private Uri uri;
 
+    public Modificar_paciente (){
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,8 +57,7 @@ public class Modificar_paciente extends AppCompatActivity {
         mtxtEdadp.setText(b.getString("edad"));
         mtxtVmp.setText(b.getString("valoracion_medica"));
 
-        storageReference.child(b.getString("foto"))
-                .getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+        storageReference.child(b.getString("foto")).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
                 Picasso.with(Modificar_paciente.this).load(uri).into(mfotoInicial2);
@@ -70,14 +72,12 @@ public class Modificar_paciente extends AppCompatActivity {
         String nombre = mtxtNombrep.getText().toString();
         String edad = mtxtEdadp.getText().toString();
         String valoracionm = mtxtVmp.getText().toString();
-        Pacientes p = new Pacientes(b.getString("id"),b.getString("foto"),cedula,
-                nombre,edad, valoracionm);
+        Pacientes p = new Pacientes(b.getString("id"),b.getString("foto"),cedula,nombre,edad, valoracionm);
 
         if(cedula.equals(b.getString("cedula"))){
             p.ModificarP();
             if(uri!=null)subir_foto(b.getString("foto"));
-            Snackbar.make(v, R.string.msgs_paciente_modificada_exitosamente,Snackbar.LENGTH_SHORT)
-                    .setAction("action",null).show();
+            Snackbar.make(v, R.string.msgs_paciente_modificada_exitosamente,Snackbar.LENGTH_SHORT).setAction("action",null).show();
 
 
         }else{

@@ -30,6 +30,8 @@ public class Crear_paciente extends AppCompatActivity {
     private EditText txtEdadp;
     private EditText txtVmp;
     private ArrayList<Integer> fotos;
+    private ArrayList<String> adapter;
+    private String opc[];
     private Resources res;
     private Uri uri;
     private ImageView foto;

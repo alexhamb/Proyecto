@@ -26,6 +26,13 @@ public class Doctores {
         this.email = email;
     }
 
+    public Doctores(String id, String foto, String cedula, String nombre, String edad) {
+    }
+
+    public Doctores(String id) {
+
+    }
+
     public String getId() {
         return id;
     }

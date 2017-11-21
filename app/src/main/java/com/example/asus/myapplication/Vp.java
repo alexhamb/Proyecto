@@ -73,7 +73,7 @@ public class Vp  extends AppCompatActivity implements AdaptadorP.OnPacientesClic
 
 
     public void agregar(View v){
-        Intent i = new Intent(Vp.this,Crear_paciente.class);
+        Intent i = new Intent(Vp.this,Registrar_Paciente.class);
         startActivity(i);
 
     }

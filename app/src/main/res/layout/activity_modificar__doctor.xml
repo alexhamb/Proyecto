@@ -32,7 +32,7 @@
         android:layout_height="40dp">
 
         <EditText
-            android:id="@+id/mtxtCedulam"
+            android:id="@+id/mtxtCedulaD"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="@string/cedula"
@@ -45,7 +45,7 @@
         android:layout_height="40dp">
 
         <EditText
-            android:id="@+id/mtxtNombrem"
+            android:id="@+id/mtxtNombreD"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="@string/nombre"
@@ -89,7 +89,7 @@
         android:layout_height="40dp">
 
         <EditText
-            android:id="@+id/mtxtEdadm"
+            android:id="@+id/mtxtEdadD"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="@string/edad"
@@ -102,7 +102,7 @@
         android:layout_height="40dp">
 
         <EditText
-            android:id="@+id/mtxtRollm"
+            android:id="@+id/mtxtRollD"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="@string/roll"
@@ -115,7 +115,7 @@
         android:layout_height="50dp">
 
         <EditText
-            android:id="@+id/mtxtEmailm"
+            android:id="@+id/mtxtEmailD"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="@string/email"

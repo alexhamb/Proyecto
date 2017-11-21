@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="0dp"
-        android:orientation="vertical"
-        android:weightSum="1"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"
-        tools:context="com.example.asus.myapplication.Crear_paciente">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/agregarp"
+        android:text="@string/agregard"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/fotoInicial2"
+        android:id="@+id/mfotoInicial1"
         android:layout_width="204dp"
         android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
-        android:contentDescription=""
         android:onClick="seleccionar_foto"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
@@ -35,7 +32,7 @@
         android:layout_height="40dp">
 
         <EditText
-            android:id="@+id/txtCedulap"
+            android:id="@+id/txtCedulaD"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="@string/cedula"
@@ -48,38 +45,81 @@
         android:layout_height="40dp">
 
         <EditText
-            android:id="@+id/txtNombrep"
+            android:id="@+id/txtNombreD"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="@string/nombre"
             android:inputType="textLongMessage"
+            android:textAllCaps="false"
             android:textStyle="bold" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="35dp">
+        android:layout_height="wrap_content">
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/sexo"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:id="@+id/Masculino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masculino"
+        android:textStyle="bold"
+        tools:text="M" />
+
+    <RadioButton
+        android:id="@+id/Femenino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Femenino"
+        android:textStyle="bold"
+        tools:text="F" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
 
         <EditText
-            android:id="@+id/txtEdadp"
+            android:id="@+id/txtEdadD"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:hint="@string/edad"
+            android:inputType="number"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:id="@+id/txtRollD"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/roll"
             android:inputType="textLongMessage"
             android:textStyle="bold" />
-
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="184dp">
+        android:layout_height="50dp">
 
         <EditText
-            android:id="@+id/txtVmp"
+            android:id="@+id/txtEmailD"
             android:layout_width="match_parent"
-            android:layout_height="184dp"
-            android:hint="@string/hms"
-            android:inputType="number"
+            android:layout_height="50dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
             android:textStyle="bold" />
     </android.support.design.widget.TextInputLayout>
 

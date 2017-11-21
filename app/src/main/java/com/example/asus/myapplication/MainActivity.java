@@ -37,11 +37,11 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-                        Intent i = new Intent(MainActivity.this, Vp.class);
+                        Intent i = new Intent(MainActivity.this, Registrar_Doctor.class);
                         startActivity(i);
                         break;
                     case 1:
-                        i = new Intent(MainActivity.this, Crear_paciente.class);
+                        i = new Intent(MainActivity.this, Registrar_Paciente.class);
                         startActivity(i);
                         break;
                 }

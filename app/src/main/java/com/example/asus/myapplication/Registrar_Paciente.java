@@ -4,10 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.net.Uri;
-import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -19,12 +19,7 @@ import com.google.firebase.storage.UploadTask;
 
 import java.util.ArrayList;
 
-/**
- * Created by ASUS on 18/11/2017.
- */
-
-public class Crear_paciente extends AppCompatActivity {
-
+public class Registrar_Paciente extends AppCompatActivity {
     private EditText txtCedulap;
     private EditText txtNombrep;
     private EditText txtEdadp;
@@ -34,14 +29,13 @@ public class Crear_paciente extends AppCompatActivity {
     private String opc[];
     private Resources res;
     private Uri uri;
-    private ImageView foto;
+    ImageView foto;
     private StorageReference storageReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cp);
-
+        setContentView(R.layout.activity_registrar__paciente);
         foto = (ImageView)findViewById(R.id.fotoInicial2);
         txtCedulap = (EditText)findViewById(R.id.txtCedulap);
         txtNombrep = (EditText)findViewById(R.id.txtNombrep);
@@ -54,7 +48,6 @@ public class Crear_paciente extends AppCompatActivity {
         storageReference = FirebaseStorage.getInstance().getReference();
 
     }
-
 
 
     public boolean validar(){
@@ -114,7 +107,7 @@ public class Crear_paciente extends AppCompatActivity {
 
     public void onBackPressed(){
         finish();
-        Intent i = new Intent(Crear_paciente.this,MainActivity.class);
+        Intent i = new Intent(Registrar_Paciente.this,MainActivity.class);
         startActivity(i);
     }
 

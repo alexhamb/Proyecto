@@ -7,23 +7,26 @@
     android:layout_height="match_parent"
     android:layout_margin="0dp"
     android:orientation="vertical"
+    android:weightSum="1"
     tools:layout_editor_absoluteX="8dp"
-    tools:layout_editor_absoluteY="8dp">
+    tools:layout_editor_absoluteY="8dp"
+    tools:context="com.example.asus.myapplication.Registrar_Paciente">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/agregard"
+        android:text="@string/agregarp"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/mfotoInicial1"
+        android:id="@+id/fotoInicial2"
         android:layout_width="204dp"
         android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
+        android:contentDescription=""
         android:onClick="seleccionar_foto"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
@@ -32,7 +35,7 @@
         android:layout_height="40dp">
 
         <EditText
-            android:id="@+id/txtCedulam"
+            android:id="@+id/txtCedulap"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="@string/cedula"
@@ -45,81 +48,38 @@
         android:layout_height="40dp">
 
         <EditText
-            android:id="@+id/txtNombrem"
+            android:id="@+id/txtNombrep"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="@string/nombre"
             android:inputType="textLongMessage"
-            android:textAllCaps="false"
             android:textStyle="bold" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </android.support.design.widget.TextInputLayout>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="@string/sexo"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RadioButton"
-        android:textStyle="bold"
-        tools:text="M" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RadioButton"
-        android:textStyle="bold"
-        tools:text="F" />
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp">
+        android:layout_height="35dp">
 
         <EditText
-            android:id="@+id/txtEdadm"
+            android:id="@+id/txtEdadp"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="35dp"
             android:hint="@string/edad"
-            android:inputType="number"
-            android:textStyle="bold" />
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp">
-
-        <EditText
-            android:id="@+id/txtRollm"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:hint="@string/roll"
             android:inputType="textLongMessage"
             android:textStyle="bold" />
+
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="184dp">
 
         <EditText
-            android:id="@+id/txtEmailm"
+            android:id="@+id/txtVmp"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
+            android:layout_height="184dp"
+            android:hint="@string/hms"
+            android:inputType="number"
             android:textStyle="bold" />
     </android.support.design.widget.TextInputLayout>
 

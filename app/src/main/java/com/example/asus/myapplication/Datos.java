@@ -12,17 +12,17 @@ import java.util.ArrayList;
 public class Datos {
 
     private static DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
-    private static String bd ="com.example.root.mproject.Pacientes";
+    private static String bd ="Hospital";
     private static ArrayList<Pacientes> pacientes = new ArrayList<>();
-    private static String bd2 ="com.example.root.mproject.Medicamentos";
+    private static String bd2 ="Hospital";
     private static ArrayList<Medicamentos> medicamentos = new ArrayList<>();
-    private static String bd3 ="com.example.root.mproject.Doctores";
+    private static String bd3 ="Hospital";
     private static ArrayList<Doctores> doctores = new ArrayList<>();
 
 
     public static void GuardarPacientes(Pacientes p){
 
-        databaseReference.child(bd).child(p.getId()).setValue(p);
+        databaseReference.child(bd).child("Pacientes").child(databaseReference.push().getKey()).setValue(p);
     }
 
     public static ArrayList<Pacientes> obtenerPacientes(){
@@ -49,7 +49,7 @@ public class Datos {
 
     public static void GuardarMedicamentos(Medicamentos m){
 
-        databaseReference.child(bd2).child(m.getId()).setValue(m);
+        databaseReference.child(bd).child(m.getId()).setValue(m);
     }
 
     public static ArrayList<Medicamentos> obtenerMedicamentos(){
@@ -61,17 +61,17 @@ public class Datos {
     }
 
     public static void ActualizarM(Medicamentos m){
-        databaseReference.child(bd2).child(m.getId()).setValue(m);
+        databaseReference.child(bd).child(m.getId()).setValue(m);
     }
     public static void EliminarM(Medicamentos m){
-        databaseReference.child(bd2).child(m.getId()).removeValue();
+        databaseReference.child(bd).child(m.getId()).removeValue();
     }
 
     //
 
     public static void GuardarDoctores(Doctores d){
 
-        databaseReference.child(bd3).child(d.getId()).setValue(d);
+        databaseReference.child(bd).child(d.getId()).setValue(d);
     }
 
     public static ArrayList<Doctores> obtenerDoctores(){
@@ -83,9 +83,9 @@ public class Datos {
     }
 
     public static void ActualizarD(Doctores d){
-        databaseReference.child(bd3).child(d.getId()).setValue(d);
+        databaseReference.child(bd).child(d.getId()).setValue(d);
     }
     public static void EliminarD(Doctores d){
-        databaseReference.child(bd3).child(d.getId()).removeValue();
+        databaseReference.child(bd).child(d.getId()).removeValue();
     }
 }

@@ -75,7 +75,7 @@ public class Login extends AppCompatActivity {
     public void crearUsuario(View v){
         crearUsuario(email.getText().toString(),password.getText().toString());
     }
-    public void login(View v) {crearUsuario(email.getText().toString(), password.getText().toString());
+    public void login(View v) {login(email.getText().toString(), password.getText().toString());
 
 
     }

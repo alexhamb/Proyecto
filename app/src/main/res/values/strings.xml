@@ -53,10 +53,12 @@
 
     <string name="RegistrarDoctor">Registrar Doctor</string>
     <string name="RegistrarPaciente">Registrar Paciente</string>
+    <string name="Medicamentos">Medicamento</string>
 
     <array name="Menu_P">
         <item>@string/RegistrarDoctor</item>
         <item>@string/RegistrarPaciente</item>
+        <item>@string/Medicamentos</item>
     </array>
 
 </resources>

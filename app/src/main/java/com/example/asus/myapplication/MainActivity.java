@@ -44,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
                         i = new Intent(MainActivity.this, Registrar_Paciente.class);
                         startActivity(i);
                         break;
+                    case 2:
+                        i = new Intent(MainActivity.this, Medicamentos.class);
+                        startActivity(i);
+                        break;
                 }
             }
 

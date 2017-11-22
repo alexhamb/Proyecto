@@ -63,9 +63,9 @@
         <EditText
             android:id="@+id/txtEdadp"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:hint="@string/edad"
-            android:inputType="textLongMessage"
+            android:inputType="number"
             android:textStyle="bold" />
 
     </android.support.design.widget.TextInputLayout>
@@ -77,9 +77,8 @@
         <EditText
             android:id="@+id/txtVmp"
             android:layout_width="match_parent"
-            android:layout_height="184dp"
+            android:layout_height="wrap_content"
             android:hint="@string/hms"
-            android:inputType="number"
             android:textStyle="bold" />
     </android.support.design.widget.TextInputLayout>
 

@@ -20,7 +20,7 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/mfotoInicial1"
+        android:id="@+id/fotoInicial2"
         android:layout_width="204dp"
         android:layout_height="80dp"
         android:layout_gravity="center_horizontal"

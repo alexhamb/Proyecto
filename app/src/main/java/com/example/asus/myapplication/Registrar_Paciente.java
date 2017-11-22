@@ -36,17 +36,21 @@ public class Registrar_Paciente extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar__paciente);
-        foto = (ImageView)findViewById(R.id.fotoInicial2);
-        txtCedulap = (EditText)findViewById(R.id.txtCedulap);
-        txtNombrep = (EditText)findViewById(R.id.txtNombrep);
-        txtEdadp = (EditText)findViewById(R.id.txtEdadp);
-        txtVmp = (EditText)findViewById(R.id.txtVmp);
+        foto = (ImageView) findViewById(R.id.fotoInicial2);
+        txtCedulap = (EditText) findViewById(R.id.txtCedulap);
+        txtNombrep = (EditText) findViewById(R.id.txtNombrep);
+        txtEdadp = (EditText) findViewById(R.id.txtEdadp);
+        txtVmp = (EditText) findViewById(R.id.txtVmp);
 
         res = this.getResources();
 
-
+        inicializar_fotos();
         storageReference = FirebaseStorage.getInstance().getReference();
-
+    }
+    public void inicializar_fotos() {
+        fotos = new ArrayList<>();
+        fotos.add(R.drawable.imagen);
+        fotos.add(R.drawable.imagen2);
     }
 
 
@@ -65,7 +69,7 @@ public class Registrar_Paciente extends AppCompatActivity {
             String id = Datos.getId();
             String foto = id+".jpg";
 
-            Pacientes p = new Pacientes(id,foto,
+            Pacientes p = new Pacientes("1","1.jpg",
                     txtCedulap.getText().toString(),
                     txtNombrep.getText().toString(),
                     txtEdadp.getText().toString());
